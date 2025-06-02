@@ -94,11 +94,41 @@ textarea:not([rows]) {
 
 body {
   font-family: "Chivo", sans-serif;
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.125rem);
+  line-height: 1.7;
   background-color: hsl(220, 75%, 98%);
   color: hsl(208, 68%, 5%);
+  padding-block: 2rem;
 }
 
 h1 {
   font-family: "Petrona", serif;
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
   color: hsl(211, 70%, 53%);
+}
+
+p {
+  max-width: 60ch;
+}
+
+strong {
+  color: hsl(211, 70%, 53%);
+}
+
+.hero-image {
+  border-radius: 1rem;
+}
+
+.recipe-list {
+  display: grid;
+  gap: 1.25em;
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 800px);
+  margin-inline: auto;
 }
