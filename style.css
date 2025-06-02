@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* Prevent font size inflation */
@@ -87,4 +90,15 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: hsl(220, 75%, 98%);
+  color: hsl(208, 68%, 5%);
+}
+
+h1 {
+  font-family: "Petrona", serif;
+  color: hsl(211, 70%, 53%);
 }
